@@ -12,33 +12,70 @@
     
     <link rel="stylesheet" href="styles.css">
 
+    <!-- Bootstrap CSS --> 
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
 </head> 
 
 <body> 
 
-    <header> 
+<header> 
 
-        <h1>Contact Me</h1> 
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
 
-        <nav> 
+        <div class="container"> 
 
-            <a href="index.html">Home</a> | 
+            <a class="navbar-brand" href="index.html">My Website</a> 
 
-            <a href="about.html">About</a> | 
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
 
-            <a href="contact.html">Contact</a> 
+                <span class="navbar-toggler-icon"></span> 
 
-        </nav> 
+            </button> 
 
-    </header> 
+            <div class="collapse navbar-collapse" id="navbarNav"> 
+
+                <ul class="navbar-nav"> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="index.html">Home</a> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="about.html">About</a> 
+
+                    </li> 
+
+                    <li class="nav-item"> 
+
+                        <a class="nav-link" href="contact.html">Contact</a> 
+
+                    </li> 
+
+                </ul> 
+
+            </div> 
+
+        </div> 
+
+    </nav> 
+
+</header> 
 
  
 
-    <main> 
 
-        <p>If you'd like to get in touch, feel free to email me at <a href="mailto:boagoletsholo0@gmail.com">boagoletsholo0@gmail.com</a>.</p> 
+   <main class="container my-5"> 
 
-    </main> 
+    <h2>Contact Me</h2> 
+
+    <p>If you'd like to get in touch, feel free to email me at <a href="mailto:boagoletsholo0@gmail.com" class="btn btn-success">boagoletsholo0@gmail.com</a>.</p> 
+
+</main> 
 
  
 
@@ -47,6 +84,12 @@
         <p>&copy; 2025 boago</p> 
 
     </footer> 
+
+    <!-- Bootstrap JS and dependencies --> 
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
 
 </body> 
 
