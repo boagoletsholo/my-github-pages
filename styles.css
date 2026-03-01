@@ -111,13 +111,36 @@ text-decoration: underline;
 }
 img {
 
-border: 5px solid #4CAF50;
+border: 5px solid #1f64f9;
 
 border-radius: 10px;
 
 }
 main a[href^="mailto:"] {
 
-color: #ff5722;
+color: #000000;
 
 font-weight: bold;
+:root {
+  --primary-color: #111827;   /* dark navy */
+  --accent-color: #1868e9;    /* modern green */
+  --light-bg: #f3f4f6;
+}
+
+body {
+  background-color: var(--light-bg);
+}
+
+.navbar {
+  background-color: var(--primary-color) !important;
+}
+
+.btn-custom {
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+}
+
+.btn-custom:hover {
+  background-color: #fffffff9;
+}
