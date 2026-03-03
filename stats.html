@@ -3,54 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Stats</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Car World | Stats</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Car World</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="stats.html" class="active">Stats</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="main-header">
+        <div class="container header-content">
+            <h1 class="site-title"><i class="fas fa-car"></i> Car World</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="stats.html" class="active">Stats</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main class="content">
-        <h1>Car Stats</h1>
-        <table class="stats-table">
-            <thead>
-                <tr>
-                    <th>Car</th>
-                    <th>Top Speed (km/h)</th>
-                    <th>0-100 km/h (s)</th>
-                    <th>Horsepower (hp)</th>
-                    <th>Price ($)</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Audi RS3</td><td>250</td><td>4.1</td><td>400</td><td>60,000</td></tr>
-                <tr><td>BMW M3</td><td>290</td><td>4.2</td><td>480</td><td>70,000</td></tr>
-                <tr><td>Mercedes AMG C63</td><td>280</td><td>4.0</td><td>510</td><td>75,000</td></tr>
-                <tr><td>Porsche 911 Carrera</td><td>310</td><td>3.5</td><td>450</td><td>90,000</td></tr>
-                <tr><td>Ferrari F8</td><td>340</td><td>2.9</td><td>710</td><td>280,000</td></tr>
-                <tr><td>Lamborghini Huracan</td><td>325</td><td>3.2</td><td>640</td><td>250,000</td></tr>
-                <tr><td>Tesla Model S Plaid</td><td>322</td><td>2.1</td><td>1020</td><td>130,000</td></tr>
-                <tr><td>Nissan GT-R</td><td>315</td><td>2.9</td><td>565</td><td>115,000</td></tr>
-                <tr><td>Chevrolet Corvette C8</td><td>312</td><td>2.8</td><td>495</td><td>95,000</td></tr>
-                <tr><td>Ford Mustang GT</td><td>250</td><td>4.3</td><td>480</td><td>60,000</td></tr>
-                <tr><td>Aston Martin Vantage</td><td>314</td><td>3.6</td><td>510</td><td>150,000</td></tr>
-                <tr><td>McLaren 720S</td><td>341</td><td>2.8</td><td>710</td><td>300,000</td></tr>
-                <tr><td>Lexus LC500</td><td>270</td><td>4.4</td><td>471</td><td>100,000</td></tr>
-                <tr><td>Jaguar F-Type</td><td>300</td><td>3.9</td><td>575</td><td>110,000</td></tr>
-                <tr><td>Honda Civic Type R</td><td>272</td><td>5.8</td><td>315</td><td>45,000</td></tr>
-            </tbody>
-        </table>
-    </main>
+    <section class="hero">
+        <div class="container">
+            <h1>Performance Statistics</h1>
+            <p>Detailed specs and numbers for the cars you love.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <h2 class="page-title">Car Specs Comparison</h2>
+            <div class="stat-list">
+                <div class="stat-item">
+                    <h3><i class="fas fa-bolt"></i> Audi RS3</h3>
+                    <div class="stat-grid">
+                        <div><span class="stat-label">Top Speed</span><span class="stat-value">250 km/h</span></div>
+                        <div><span class="stat-label">0-100 km/h</span><span class="stat-value">4.1 sec</span></div>
+                        <div><span class="stat-label">Horsepower</span><span class="stat-value">394 hp</span></div>
+                        <div><span class="stat-label">Torque</span><span class="stat-value">480 Nm</span></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <h3><i class="fas fa-bolt"></i> BMW M3</h3>
+                    <div class="stat-grid">
+                        <div><span class="stat-label">Top Speed</span><span class="stat-value">290 km/h</span></div>
+                        <div><span class="stat-label">0-100 km/h</span><span class="stat-value">4.2 sec</span></div>
+                        <div><span class="stat-label">Horsepower</span><span class="stat-value">473 hp</span></div>
+                        <div><span class="stat-label">Torque</span><span class="stat-value">550 Nm</span></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <h3><i class="fas fa-bolt"></i> Mercedes AMG C63</h3>
+                    <div class="stat-grid">
+                        <div><span class="stat-label">Top Speed</span><span class="stat-value">280 km/h</span></div>
+                        <div><span class="stat-label">0-100 km/h</span><span class="stat-value">4.0 sec</span></div>
+                        <div><span class="stat-label">Horsepower</span><span class="stat-value">503 hp</span></div>
+                        <div><span class="stat-label">Torque</span><span class="stat-value">700 Nm</span></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <h3><i class="fas fa-bolt"></i> Porsche 911 Carrera</h3>
+                    <div class="stat-grid">
+                        <div><span class="stat-label">Top Speed</span><span class="stat-value">310 km/h</span></div>
+                        <div><span class="stat-label">0-100 km/h</span><span class="stat-value">3.5 sec</span></div>
+                        <div><span class="stat-label">Horsepower</span><span class="stat-value">443 hp</span></div>
+                        <div><span class="stat-label">Torque</span><span class="stat-value">530 Nm</span></div>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <h3><i class="fas fa-bolt"></i> Ferrari F8</h3>
+                    <div class="stat-grid">
+                        <div><span class="stat-label">Top Speed</span><span class="stat-value">340 km/h</span></div>
+                        <div><span class="stat-label">0-100 km/h</span><span class="stat-value">2.9 sec</span></div>
+                        <div><span class="stat-label">Horsepower</span><span class="stat-value">710 hp</span></div>
+                        <div><span class="stat-label">Torque</span><span class="stat-value">770 Nm</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Car World | Designed by Boago Letsholo</p>
+        <div class="container">
+            <p><i class="fas fa-car"></i> Car World — Your professional auto guide. <i class="fas fa-road"></i></p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">&copy; 2025 Car World. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

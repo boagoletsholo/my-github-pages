@@ -3,38 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Reviews</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Car World | Reviews</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Car World</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="stats.html">Stats</a></li>
-            <li><a href="reviews.html" class="active">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <main class="content">
-        <h1>Car Reviews</h1>
-        <div class="reviews-grid">
-            <div class="review-card"><h3>Audi RS3</h3><p>Excellent handling and power, perfect for city and track driving.</p></div>
-            <div class="review-card"><h3>BMW M3</h3><p>A classic sports sedan with aggressive performance and smooth ride.</p></div>
-            <div class="review-card"><h3>Mercedes AMG C63</h3><p>Powerful V8 engine, luxurious interior, very comfortable for daily drives.</p></div>
-            <div class="review-card"><h3>Porsche 911 Carrera</h3><p>Legendary sports car with precise steering and timeless design.</p></div>
-            <div class="review-card"><h3>Ferrari F8</h3><p>Stunning acceleration and exotic looks, true supercar experience.</p></div>
-            <div class="review-card"><h3>Lamborghini Huracan</h3><p>Intense driving experience with roaring V10 engine.</p></div>
-            <div class="review-card"><h3>Tesla Model S Plaid</h3><p>Insane electric acceleration, modern tech, and long range.</p></div>
-            <div class="review-card"><h3>Nissan GT-R</h3><p>Powerful and fast with a strong track record, but a bit heavy.</p></div>
-            <div class="review-card"><h3>Chevrolet Corvette C8</h3><p>Affordable supercar with excellent handling and speed.</p></div>
-            <div class="review-card"><h3>Honda Civic Type R</h3><p>Practical hot hatch, excellent handling and fun for everyday use.</p></div>
+    <header class="main-header">
+        <div class="container header-content">
+            <h1 class="site-title"><i class="fas fa-car"></i> Car World</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="review.html" class="active">Reviews</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </main>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Expert Car Reviews</h1>
+            <p>Honest, in-depth reviews to help you choose your next ride.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <h2 class="page-title">Latest Reviews</h2>
+            <div class="review-list">
+                <div class="review-item">
+                    <h3><i class="fas fa-star" style="color: #d4a017;"></i> Audi RS3</h3>
+                    <div class="review-meta">Reviewed by Alex | March 3, 2026</div>
+                    <p class="review-text">The Audi RS3 offers a perfect blend of everyday usability and thrilling performance. The 5-cylinder engine has a unique character, and the handling is sharp. Highly recommended for enthusiasts who need a practical daily driver.</p>
+                </div>
+                <div class="review-item">
+                    <h3><i class="fas fa-star" style="color: #d4a017;"></i> BMW M3</h3>
+                    <div class="review-meta">Reviewed by Jamie | February 28, 2026</div>
+                    <p class="review-text">The latest M3 is a beast. It's powerful, agile, and surprisingly comfortable for long trips. The rear-wheel drive setup gives it a pure sports sedan feel. A true icon.</p>
+                </div>
+                <div class="review-item">
+                    <h3><i class="fas fa-star" style="color: #d4a017;"></i> Porsche 911 Carrera</h3>
+                    <div class="review-meta">Reviewed by Taylor | February 20, 2026</div>
+                    <p class="review-text">The 911 Carrera is the benchmark for sports cars. It's refined, incredibly fast, and yet you can drive it every day. The engine note is intoxicating. Worth every penny.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Car World | Designed by Boago Letsholo</p>
+        <div class="container">
+            <p><i class="fas fa-car"></i> Car World — Your professional auto guide. <i class="fas fa-road"></i></p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">&copy; 2025 Car World. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

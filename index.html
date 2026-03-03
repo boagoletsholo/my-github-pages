@@ -3,49 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car World</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Car World | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar">
-        <div class="logo">Car World</div>
-        <ul class="nav-links">
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="stats.html">Stats</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-text">
-            <h1>Explore the World of Cars</h1>
-            <p>Discover performance stats, expert reviews, and all you need to know about 15 amazing cars.</p>
+    <header class="main-header">
+        <div class="container header-content">
+            <h1 class="site-title"><i class="fas fa-car"></i> Car World</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- About Section -->
-    <section class="about">
-        <h2>About Car World</h2>
-        <p>Car World is your professional guide to the latest and most iconic cars. Whether you're a car enthusiast or looking to buy your dream car, we provide detailed stats and honest reviews to help you make informed decisions.</p>
+    <section class="hero">
+        <div class="container">
+            <h1>Explore the World of Cars</h1>
+            <p>Discover performance stats, expert reviews, and all you need to know about 15 amazing cars.</p>
+        </div>
     </section>
 
-    <!-- Featured Cars Section -->
-    <section class="featured-cars">
-        <h2>Featured Cars</h2>
-        <div class="car-cards">
-            <div class="card"><h3>Audi RS3</h3><p>Top Speed: 250 km/h | 0-100 km/h: 4.1s</p></div>
-            <div class="card"><h3>BMW M3</h3><p>Top Speed: 290 km/h | 0-100 km/h: 4.2s</p></div>
-            <div class="card"><h3>Mercedes AMG C63</h3><p>Top Speed: 280 km/h | 0-100 km/h: 4.0s</p></div>
-            <div class="card"><h3>Porsche 911 Carrera</h3><p>Top Speed: 310 km/h | 0-100 km/h: 3.5s</p></div>
-            <div class="card"><h3>Ferrari F8</h3><p>Top Speed: 340 km/h | 0-100 km/h: 2.9s</p></div>
+    <section class="about-section">
+        <div class="container">
+            <h2>About Car World</h2>
+            <p>Car World is your professional guide to the latest and most iconic cars. Whether you're a car enthusiast or looking to buy your dream car, we provide detailed stats and honest reviews to help you make informed decisions.</p>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container">
+            <h2 class="section-title">Featured Cars</h2>
+            <div class="car-grid">
+                <!-- Audi RS3 Card -->
+                <div class="car-card">
+                    <div class="car-header">
+                        <h3><i class="fas fa-bolt"></i> Audi RS3</h3>
+                    </div>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Top Speed:</span>
+                            <span class="value">250 km/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>0-100 km/h:</span>
+                            <span class="value">4.1s</span>
+                        </div>
+                        <div class="car-divider"></div>
+                        <div style="color: #9ab3d1; text-align: right; font-size: 0.95rem;"><i class="fas fa-star" style="color: #d4a017;"></i> Iconic 5-cylinder</div>
+                    </div>
+                </div>
+
+                <!-- BMW M3 Card -->
+                <div class="car-card">
+                    <div class="car-header">
+                        <h3><i class="fas fa-bolt"></i> BMW M3</h3>
+                    </div>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Top Speed:</span>
+                            <span class="value">290 km/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>0-100 km/h:</span>
+                            <span class="value">4.2s</span>
+                        </div>
+                        <div class="car-divider"></div>
+                        <div style="color: #9ab3d1; text-align: right; font-size: 0.95rem;"><i class="fas fa-star" style="color: #d4a017;"></i> Rear-wheel drive</div>
+                    </div>
+                </div>
+
+                <!-- Mercedes AMG C63 Card -->
+                <div class="car-card">
+                    <div class="car-header">
+                        <h3><i class="fas fa-bolt"></i> Mercedes AMG C63</h3>
+                    </div>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Top Speed:</span>
+                            <span class="value">280 km/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>0-100 km/h:</span>
+                            <span class="value">4.0s</span>
+                        </div>
+                        <div class="car-divider"></div>
+                        <div style="color: #9ab3d1; text-align: right; font-size: 0.95rem;"><i class="fas fa-star" style="color: #d4a017;"></i> V8 Biturbo</div>
+                    </div>
+                </div>
+
+                <!-- Porsche 911 Carrera Card -->
+                <div class="car-card">
+                    <div class="car-header">
+                        <h3><i class="fas fa-bolt"></i> Porsche 911 Carrera</h3>
+                    </div>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Top Speed:</span>
+                            <span class="value">310 km/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>0-100 km/h:</span>
+                            <span class="value">3.5s</span>
+                        </div>
+                        <div class="car-divider"></div>
+                        <div style="color: #9ab3d1; text-align: right; font-size: 0.95rem;"><i class="fas fa-star" style="color: #d4a017;"></i> Rear-engine</div>
+                    </div>
+                </div>
+
+                <!-- Ferrari F8 Card -->
+                <div class="car-card">
+                    <div class="car-header">
+                        <h3><i class="fas fa-bolt"></i> Ferrari F8</h3>
+                    </div>
+                    <div class="car-specs">
+                        <div class="spec-item">
+                            <i class="fas fa-tachometer-alt"></i>
+                            <span>Top Speed:</span>
+                            <span class="value">340 km/h</span>
+                        </div>
+                        <div class="spec-item">
+                            <i class="fas fa-rocket"></i>
+                            <span>0-100 km/h:</span>
+                            <span class="value">2.9s</span>
+                        </div>
+                        <div class="car-divider"></div>
+                        <div style="color: #9ab3d1; text-align: right; font-size: 0.95rem;"><i class="fas fa-star" style="color: #d4a017;"></i> Twin-turbo V8</div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2026 Car World | Designed by Boago Letsholo</p>
+        <div class="container">
+            <p><i class="fas fa-car"></i> Car World — Your professional auto guide. <i class="fas fa-road"></i></p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">&copy; 2025 Car World. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>

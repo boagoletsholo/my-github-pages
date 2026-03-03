@@ -3,53 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Car World</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Car World | Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="logo">Car World</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="stats.html">Stats</a></li>
-            <li><a href="reviews.html">Reviews</a></li>
-            <li><a href="contact.html" class="active">Contact</a></li>
-        </ul>
-    </nav>
+    <header class="main-header">
+        <div class="container header-content">
+            <h1 class="site-title"><i class="fas fa-car"></i> Car World</h1>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="review.html">Reviews</a></li>
+                    <li><a href="stats.html">Stats</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-    <main class="content">
-        <h1>Contact Us</h1>
-        <section class="contact-form">
-            <h2>Send a Message</h2>
-            <form action="#" method="post">
-                <label>Name:</label>
-                <input type="text" placeholder="Your Name" required>
-                <label>Email:</label>
-                <input type="email" placeholder="Your Email" required>
-                <label>Message:</label>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </section>
+    <section class="hero">
+        <div class="container">
+            <h1>Get in Touch</h1>
+            <p>Have questions or suggestions? We'd love to hear from you.</p>
+        </div>
+    </section>
 
-        <section class="contact-table">
-            <h2>Our Contact Info</h2>
-            <table>
-                <thead>
-                    <tr><th>Type</th><th>Details</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>Email</td><td>boagoletsholo0@gmail.com</td></tr>
-                    <tr><td>Phone</td><td>+267 75847727</td></tr>
-                    <tr><td>Address</td><td>Gaborone, Botswana</td></tr>
-                    <tr><td>Support Hours</td><td>Mon-Fri 9:00-17:00</td></tr>
-                </tbody>
-            </table>
-        </section>
-    </main>
+    <section class="page-content">
+        <div class="container">
+            <h2 class="page-title">Contact Us</h2>
+            <div class="contact-info">
+                <p style="margin-bottom: 30px; text-align: center;">Fill out the form below and we'll get back to you as soon as possible.</p>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="name">boago</label>
+                        <input type="text" id="name" name="name" placeholder="e.g., John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Your questions or comments..." required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn"><i class="fas fa-paper-plane"></i> Send Message</button>
+                </form>
+                <div style="margin-top: 40px; text-align: center; color: #9ab3d1;">
+                    <p><i class="fas fa-envelope"></i> boagoletsholo0@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <p>&copy; 2026 Car World | Designed by Boago Letsholo</p>
+        <div class="container">
+            <p><i class="fas fa-car"></i> Car World — Your professional auto guide. <i class="fas fa-road"></i></p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">&copy; 2025 Car World. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 </html>
