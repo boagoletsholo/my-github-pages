@@ -1,94 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>AutoSphere | Interactive Car Hub</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car World</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Car World</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="stats.html">Stats</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- NAVIGATION -->
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-  <div class="container">
-    <a class="navbar-brand fw-bold text-danger" href="#">AutoSphere</a>
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Explore the World of Cars</h1>
+            <p>Discover performance stats, expert reviews, and all you need to know about 15 amazing cars.</p>
+        </div>
+    </header>
 
-    <div class="collapse navbar-collapse">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
+    <!-- About Section -->
+    <section class="about">
+        <h2>About Car World</h2>
+        <p>Car World is your professional guide to the latest and most iconic cars. Whether you're a car enthusiast or looking to buy your dream car, we provide detailed stats and honest reviews to help you make informed decisions.</p>
+    </section>
 
-<!-- HERO -->
-<section class="hero text-center">
-  <div class="container">
-    <h1 class="fw-bold">Explore Modern Performance Cars</h1>
-    <p>Click a car to view its performance statistics.</p>
+    <!-- Featured Cars Section -->
+    <section class="featured-cars">
+        <h2>Featured Cars</h2>
+        <div class="car-cards">
+            <div class="card"><h3>Audi RS3</h3><p>Top Speed: 250 km/h | 0-100 km/h: 4.1s</p></div>
+            <div class="card"><h3>BMW M3</h3><p>Top Speed: 290 km/h | 0-100 km/h: 4.2s</p></div>
+            <div class="card"><h3>Mercedes AMG C63</h3><p>Top Speed: 280 km/h | 0-100 km/h: 4.0s</p></div>
+            <div class="card"><h3>Porsche 911 Carrera</h3><p>Top Speed: 310 km/h | 0-100 km/h: 3.5s</p></div>
+            <div class="card"><h3>Ferrari F8</h3><p>Top Speed: 340 km/h | 0-100 km/h: 2.9s</p></div>
+        </div>
+    </section>
 
-    <input type="text" id="searchInput" class="form-control w-50 mx-auto mt-4"
-      placeholder="Search for a car..." onkeyup="searchCar()">
-  </div>
-</section>
-
-<!-- CAR CARDS -->
-<section class="container py-5">
-  <div class="row g-4" id="carContainer">
-
-    <div class="col-md-4 car-item" data-name="bmw m4">
-      <div class="car-card" onclick="showCar('bmw')">
-        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068">
-        <h5>BMW M4</h5>
-      </div>
-    </div>
-
-    <div class="col-md-4 car-item" data-name="audi rs7">
-      <div class="car-card" onclick="showCar('audi')">
-        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537">
-        <h5>Audi RS7</h5>
-      </div>
-    </div>
-
-    <div class="col-md-4 car-item" data-name="toyota supra">
-      <div class="car-card" onclick="showCar('supra')">
-        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6b5">
-        <h5>Toyota Supra</h5>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- STATS TABLE -->
-<section class="container pb-5">
-  <h2 class="text-center mb-4">Car Performance Statistics</h2>
-
-  <table class="table table-bordered text-center" id="statsTable">
-    <thead class="table-danger">
-      <tr>
-        <th>Car</th>
-        <th>Horsepower</th>
-        <th>0-100 km/h</th>
-        <th>Top Speed</th>
-      </tr>
-    </thead>
-    <tbody id="statsBody">
-      <tr>
-        <td>Select a car above to view its stats</td>
-        <td>-</td>
-        <td>-</td>
-        <td>-</td>
-      </tr>
-    </tbody>
-  </table>
-</section>
-
-<script src="script.js"></script>
-
+    <footer>
+        <p>&copy; 2026 Car World | Designed by Boago Letsholo</p>
+    </footer>
 </body>
 </html>
