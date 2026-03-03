@@ -1,128 +1,94 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AutoSphere | Interactive Car Hub</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<html lang="en"> 
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
 
-<head> 
+<body>
 
-    <meta charset="UTF-8"> 
+<!-- NAVIGATION -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger" href="#">AutoSphere</a>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <div class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <title>My First GitHub Page</title> 
-    
-    <link rel="stylesheet" href="styles.css">
+<!-- HERO -->
+<section class="hero text-center">
+  <div class="container">
+    <h1 class="fw-bold">Explore Modern Performance Cars</h1>
+    <p>Click a car to view its performance statistics.</p>
 
-    <!-- Bootstrap CSS --> 
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-
-</head> 
-<footer class="text-center">
-  <p>© 2026 Boago Letsholo | Built with Bootstrap</p>
-</footer>
-
-<body> 
-
-<header> 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-
-        <div class="container"> 
-
-            <a class="navbar-brand" href="index.html">My Website</a> 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-
-                <span class="navbar-toggler-icon"></span> 
-
-            </button> 
-
-            <div class="collapse navbar-collapse" id="navbarNav"> 
-
-                <ul class="navbar-nav"> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="index.html">Home</a> 
-
-                    </li> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="about.html">About</a> 
-
-                    </li> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="contact.html">Contact</a> 
-
-                    </li> 
-
-                </ul> 
-
-            </div> 
-
-        </div> 
-
-    </nav> 
-    <section class="hero d-flex align-items-center justify-content-center text-center">
-  <div>
-    <h1 class="display-3 fw-bold">Boago Letsholo</h1>
-    <p class="lead">Aspiring Developer | Learning Web Development</p>
-    <a href="about.html" class="btn btn-custom mt-3">Learn More</a>
+    <input type="text" id="searchInput" class="form-control w-50 mx-auto mt-4"
+      placeholder="Search for a car..." onkeyup="searchCar()">
   </div>
 </section>
-<section class="container text-center">
-  <h2 class="mb-5">My Skills</h2>
-  <div class="row">
 
-    <div class="col-md-4">
-      <div class="card p-4">
-        <h5>HTML</h5>
-        <p>I use HTML to structure webpages clearly.</p>
+<!-- CAR CARDS -->
+<section class="container py-5">
+  <div class="row g-4" id="carContainer">
+
+    <div class="col-md-4 car-item" data-name="bmw m4">
+      <div class="car-card" onclick="showCar('bmw')">
+        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068">
+        <h5>BMW M4</h5>
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="card p-4">
-        <h5>CSS & Bootstrap</h5>
-        <p>I can create responsive and clean layouts.</p>
+    <div class="col-md-4 car-item" data-name="audi rs7">
+      <div class="car-card" onclick="showCar('audi')">
+        <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537">
+        <h5>Audi RS7</h5>
       </div>
     </div>
 
-    <div class="col-md-4">
-      <div class="card p-4">
-        <h5>Git & GitHub</h5>
-        <p>I manage versions and deploy websites.</p>
+    <div class="col-md-4 car-item" data-name="toyota supra">
+      <div class="car-card" onclick="showCar('supra')">
+        <img src="https://images.unsplash.com/photo-1603386329225-868f9b1ee6b5">
+        <h5>Toyota Supra</h5>
       </div>
     </div>
 
   </div>
 </section>
-<section class="container text-center">
-  <h2 class="mb-4">My Learning Journey</h2>
-  <p>
-    Through Tutorials 1 to 4, I learned how to structure HTML pages,
-    link multiple pages together, apply consistent styling,
-    and publish a live website using GitHub Pages.
-  </p>
+
+<!-- STATS TABLE -->
+<section class="container pb-5">
+  <h2 class="text-center mb-4">Car Performance Statistics</h2>
+
+  <table class="table table-bordered text-center" id="statsTable">
+    <thead class="table-danger">
+      <tr>
+        <th>Car</th>
+        <th>Horsepower</th>
+        <th>0-100 km/h</th>
+        <th>Top Speed</th>
+      </tr>
+    </thead>
+    <tbody id="statsBody">
+      <tr>
+        <td>Select a car above to view its stats</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table>
 </section>
 
-    <footer> 
+<script src="script.js"></script>
 
-       <footer class="text-center py-4">
-  <p>© 2026 Boago Letsholo | portfolio Website</p>
-</footer>
-
-    </footer> 
-
-    <!-- Bootstrap JS and dependencies --> 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
-
-</body> 
-
-</html> 
+</body>
+</html>

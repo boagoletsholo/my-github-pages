@@ -1,143 +1,53 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AutoSphere | Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
 
-<html lang="en"> 
+<body>
 
-<head> 
-
-    <meta charset="UTF-8"> 
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-
-    <title>Contact Me</title> 
-    
-    <link rel="stylesheet" href="styles.css">
-
-    <!-- Bootstrap CSS --> 
-
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-
-</head> 
-
-<body> 
-
-<header> 
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> 
-
-        <div class="container"> 
-
-            <a class="navbar-brand" href="index.html">My Website</a> 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-
-                <span class="navbar-toggler-icon"></span> 
-
-            </button> 
-
-            <div class="collapse navbar-collapse" id="navbarNav"> 
-
-                <ul class="navbar-nav"> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="index.html">Home</a> 
-
-                    </li> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="about.html">About</a> 
-
-                    </li> 
-
-                    <li class="nav-item"> 
-
-                        <a class="nav-link" href="contact.html">Contact</a> 
-
-                    </li> 
-
-                </ul> 
-
-            </div> 
-
-        </div> 
-
-    </nav> 
-
-</header> 
-
- <section class="container py-5">
-  <div class="row align-items-center">
-
-    <!-- LEFT SIDE: Contact Form -->
-    <div class="col-md-6">
-      <h1 class="fw-bold mb-4">Contact Me</h1>
-
-      <form>
-        <div class="mb-3">
-          <label class="form-label">Full Name</label>
-          <input type="text" class="form-control" placeholder="Enter your name">
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Email Address</label>
-          <input type="email" class="form-control" placeholder="Enter your email">
-        </div>
-
-        <div class="mb-3">
-          <label class="form-label">Message</label>
-          <textarea class="form-control" rows="4" placeholder="Write your message"></textarea>
-        </div>
-
-        <button type="submit" class="btn btn-custom">Send Message</button>
-      </form>
-    </div>
-
-    <!-- RIGHT SIDE: Contact Info -->
-    <div class="col-md-6 text-center">
-      <div class="card p-4">
-        <h5 class="mb-3">Get In Touch</h5>
-        <p>
-  📧 
-  <a href="mailto:boagoletsholo0@gmail.com" class="contact-link">
-    boagoletsholo0@gmail.com
-  </a>
-</p>
-       <p>
-  💻 
-  <a href="https://github.com/boagoletsholo" target="_blank" class="contact-link">
-    github.com/boagoletsholo
-  </a>
-</p>
-      </div>
-    </div>
-
+<nav class="navbar navbar-light bg-white shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-danger" href="index.html">AutoSphere</a>
   </div>
-</section>
-<section class="container text-center py-5">
-  <h2 class="mb-4">Why Contact Me?</h2>
+</nav>
+
+<section class="container py-5">
+  <h2 class="mb-4">Contact AutoSphere</h2>
+
+  <form>
+    <div class="mb-3">
+      <label>Name</label>
+      <input type="text" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label>Email</label>
+      <input type="email" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+      <label>Message</label>
+      <textarea class="form-control" rows="4"></textarea>
+    </div>
+
+    <button class="btn btn-danger">Send Message</button>
+  </form>
+
+  <hr class="my-4">
+
+  <h5>Or contact via email directly:</h5>
   <p>
-    I am always open to learning opportunities, collaborations,
-    and feedback that can help me improve my development skills.
+    <a href="mailto:yourname@example.com" class="text-danger fw-bold">
+      yourname@example.com
+    </a>
   </p>
+
 </section>
 
- 
-
-    <footer> 
-
-        <footer class="text-center py-4">
-  <p>© 2026 Boago Letsholo | Portfolio Website</p>
-</footer>
-
-    </footer> 
-
-    <!-- Bootstrap JS and dependencies --> 
-
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script> 
-
-</body> 
-
+</body>
 </html>
